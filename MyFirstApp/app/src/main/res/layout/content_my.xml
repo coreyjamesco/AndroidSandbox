@@ -7,28 +7,15 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/edit_message"
-            android:hint="@string/edit_message" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_send"
-            android:onClick="sendMessage"/>
-        <TextView
-            android:text="- tss"
-            android:textAllCaps="false"
-            android:textStyle="italic"
-            android:textColor="#E91E63"
-            android:background="#3F51B5"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_width="48dp"
-            android:layout_height="48dp" />
-        <ImageView
-            android:src="@drawable/triathlon_terms"
+            android:text="@string/tp_tss"
+            android:id="@+id/tp_tss"
+            android:onClick="translateTSS"/>
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="center"/>
+            android:text="@string/tp_if"/>
+
 </LinearLayout>

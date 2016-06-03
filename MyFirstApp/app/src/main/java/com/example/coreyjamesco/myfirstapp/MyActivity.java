@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
+import android.widget.Button;
 
 public class MyActivity extends AppCompatActivity {
 
@@ -55,10 +55,10 @@ public class MyActivity extends AppCompatActivity {
     }
 
     /** Called when the user clicks the Send button */
-    public void sendMessage(View view) {
+    public void translateTSS(View view) {
         Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
+        /**Button buttonText = (Button) findViewById(R.id.tp_tss);*/
+        String message = "Training Stress Score (TSS) is a composite number that takes into account the duration and intensity of a workout to arrive at a single estimate of the overall training load and physiological stress created by that training session.";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
