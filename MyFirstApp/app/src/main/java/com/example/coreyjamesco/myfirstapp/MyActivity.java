@@ -62,4 +62,12 @@ public class MyActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+    public void translateIF(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        /**Button buttonText = (Button) findViewById(R.id.tp_tss);*/
+        String message = "Intensity Factor® (IF) is an indication of how hard or difficult a ride was in relation to your overall fitness. IF® values are calculated by taking your Normalized Power® (NP) and dividing it by your Functional Threshold Power (FTP).";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
 }

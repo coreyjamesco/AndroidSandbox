@@ -11,11 +11,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tp_tss"
-            android:id="@+id/tp_tss"
             android:onClick="translateTSS"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/tp_if"/>
+            android:text="@string/tp_if"
+            android:onClick="translateIF"/>
 
 </LinearLayout>
