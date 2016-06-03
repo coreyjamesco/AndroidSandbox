@@ -2,14 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
         <EditText
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/edit_message"
             android:hint="@string/edit_message" />
@@ -18,4 +17,18 @@
             android:layout_height="wrap_content"
             android:text="@string/button_send"
             android:onClick="sendMessage"/>
+        <TextView
+            android:text="- tss"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textColor="#E91E63"
+            android:background="#3F51B5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+        <ImageView
+            android:src="@drawable/triathlon_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"/>
 </LinearLayout>
