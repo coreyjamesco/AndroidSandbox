@@ -2,13 +2,19 @@
     <string name="app_name">TrainingPeaks Translator</string>
     <string name="action_settings">Settings</string>
     <string name="tp_tss">TSS</string>
+    <!-- get fancy for combining definitions for IF to suite both pace and power -->
     <string name="tp_if">IF</string>
     <string name="tp_np">NP</string>
     <string name="tp_vi">VI</string>
+    <!-- get fancy for combining definitions for EF to suite both pace and power -->
     <string name="tp_ef">EF</string>
     <string name="tp_wkg">W/kg</string>
     <string name="tp_pwrbal">Pwr Bal</string>
     <string name="tp_ngp">NGP</string>
+    <string name="tp_work">Work</string>
+    <!-- combine Aerobic Decoupling for both Pace and Power and get fancy with the definition for combining -->
     <string name="tp_pahr">Pa:Hr</string>
+    <string name="tp_pwhr">Pw:Hr</string>
+    <string name="tp_vam">VAM</string>
     <string name="title_activity_display_message">Back to terms</string>
 </resources>

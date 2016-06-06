@@ -70,4 +70,68 @@ public class MyActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+    public void translateNP(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Normalized Power® (NP®) is an estimate of the power that you could have maintained for the same physiological cost if your power had been perfectly constant instead of variable.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateVI(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Variability Index (VI) is the measure of how smooth or evenly paced your power output was during a workout. VI is the ratio of normalized power to average power.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateEF(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Efficiency Factor (EF) is a good measure of your aerobic fitness. By comparing the numbers for similar workouts over several weeks you can measure improvements in aerobic efficiency. If you are making good aerobic progress then your EF will rise over the course of a few weeks. For pace sports, like running, EF is the ratio of normalized graded pace to average heart rate. For sports power sports, like cycling, EF is the ratio of normalized power to average heart rate.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateWkg(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Watts Per Kilogram (W/kg) is a great indicator of your ability to perform in hilly terrain and long climbs. W/kg is the ratio of average power in watts to body mass in kilograms.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translatePwrBal(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Power Balance Right is the percentage of power contributed by the right leg to the total power output.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateNGP(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Normalized Graded Pace (NGP) is your adjusted pace that reflects the changes in grade and intensity that contribute to the physiological cost of running on varied terrain.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateWork(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Work is the energy transferred to the bike in the form of kilojoules. It is generally accepted in cycling that kilojoules and calories conveniently convert in a 1:1 ratio.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translatePaPwHr(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "Aerobic Decoupling is the comparison of the efficiency factors for the two halves of the selected interval. If your aerobic decoupling is consistently 5% or less for steady-state aerobic intervals then your aerobic fitness is good.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
+    public void translateVAM(View view) {
+        Intent intent = new Intent(this, DisplayMessageActivity.class);
+        String message = "VAM is your average rate of elevation gain in meters per hour. VAM is the abbreviation for the Italian term velocità ascensionale media.";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+    }
+
 }

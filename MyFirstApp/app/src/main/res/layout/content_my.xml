@@ -8,14 +8,68 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:text="@string/tp_tss"
             android:onClick="translateTSS"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:text="@string/tp_if"
             android:onClick="translateIF"/>
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/tp_np"
+            android:onClick="translateNP"/>
+    <!--
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_vi"
+           android:onClick="translateVI"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_ef"
+           android:onClick="translateEF"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_wkg"
+           android:onClick="translateWkg"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_pwrbal"
+           android:onClick="translatePwrBal"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_ngp"
+           android:onClick="translateNGP"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_work"
+           android:onClick="translateWork"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_pahr"
+           android:onClick="translatePaPwHr"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_pwhr"
+           android:onClick="translatePaPwHr"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/tp_vam"
+           android:onClick="translateVAM"/>
+           -->
 </LinearLayout>
