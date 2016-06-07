@@ -11,6 +11,6 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.coreyjamesco.myfirstapp.DisplayMessageActivity"
     tools:showIn="@layout/activity_display_message"
-    android:id="@+id/content">
-
+    android:id="@+id/content"
+    android:background="#616161">
 </RelativeLayout>
