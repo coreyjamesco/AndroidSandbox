@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -8,35 +8,45 @@
     android:background="#616161"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <Button
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:text="@string/tp_tss"
             android:onClick="translateTSS"
             android:id="@+id/tp_tss"
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:text="@string/tp_if"
             android:onClick="translateIF"
             android:id="@+id/tp_if"
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_height="wrap_content"
             android:text="@string/tp_ef"
             android:onClick="translateEF"
@@ -44,6 +54,7 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,9 +63,11 @@
             android:onClick="translateNP"
             android:textColor="#FFFFFF"
             android:background="#1A237E"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:id="@+id/tp_np"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -64,9 +77,10 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_if"
-            android:layout_margin="30dp"
+            android:layout_margin="20dp"
             android:layout_centerHorizontal="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,9 +90,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_ef"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_alignParentRight="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -88,9 +104,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_np"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_alignParentLeft="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,9 +118,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_ngp"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_centerHorizontal="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -112,9 +132,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_vam"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_alignParentRight="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -124,9 +146,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_wkg"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_alignParentLeft="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -136,9 +160,11 @@
             android:textColor="#FFFFFF"
             android:background="#1A237E"
             android:layout_below="@+id/tp_pwrbal"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_centerHorizontal="true"
             android:textAllCaps="false"/>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,8 +173,12 @@
             android:id="@+id/tp_vi"
             android:textColor="#FFFFFF"
             android:background="#1A237E"
-            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
             android:layout_below="@+id/tp_work"
             android:layout_alignParentRight="true"
             android:textAllCaps="false"/>
-</RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
