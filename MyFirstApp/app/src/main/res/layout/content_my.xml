@@ -2,183 +2,486 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#616161"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_my">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <Button
-            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:text="@string/tp_tss"
-            android:onClick="translateTSS"
-            android:id="@+id/tp_tss"
-            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
             android:background="#1A237E"
-            android:textAllCaps="false"/>
+            android:onClick="translateAerobic"
+            android:text="@string/tp_term_aerobic"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:text="@string/tp_if"
-            android:onClick="translateIF"
-            android:id="@+id/tp_if"
-            android:textColor="#FFFFFF"
+            android:layout_margin="16dp"
             android:background="#1A237E"
-            android:textAllCaps="false"/>
+            android:onClick="translateAnaerobic"
+            android:text="@string/tp_term_anaerobic"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tp_ef"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateAnaerobicEndurance"
+            android:text="@string/tp_term_anaerobic_endurance"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateAAStrengthPhase"
+            android:text="@string/tp_term_aa_strength_phase"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateATP"
+            android:text="@string/tp_term_atp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateBasePeriod"
+            android:text="@string/tp_term_base_period"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateBT"
+            android:text="@string/tp_term_bt"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateBuildPeriod"
+            android:text="@string/tp_term_build_period"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateCadence"
+            android:text="@string/tp_term_cadence"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateCalendarCompanion"
+            android:text="@string/tp_term_calendar_companion"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateCriticalPower"
+            android:text="@string/tp_term_cp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateCrossTraining"
+            android:text="@string/tp_term_cross_training"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateDashboard"
+            android:text="@string/tp_term_dashboard"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
             android:onClick="translateEF"
-            android:id="@+id/tp_ef"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:textAllCaps="false"/>
+            android:text="@string/tp_term_ef"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tp_tss"
-            android:text="@string/tp_np"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateEndurance"
+            android:text="@string/tp_term_endurance"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateForce"
+            android:text="@string/tp_term_force"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:onClick="translateFormSprints"
+            android:text="@string/tp_term_form_sprints"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateFrequency"
+            android:text="@string/tp_term_frequency"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateFrequency"
+            android:text="@string/tp_term_frequency"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateHRTrainingZones"
+            android:text="@string/tp_term_heart_rate_training_zones"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateHoods"
+            android:text="@string/tp_term_hoods"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateIF"
+            android:text="@string/tp_term_if"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateIntensity"
+            android:text="@string/tp_term_intensity"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateIntervalTraining"
+            android:text="@string/tp_term_interval_training"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateILT"
+            android:text="@string/tp_term_ilt"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateLT"
+            android:text="@string/tp_term_lt"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateLactate"
+            android:text="@string/tp_term_lactate"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateLacticAcid"
+            android:text="@string/tp_term_lactic_acid"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateMacronutrient"
+            android:text="@string/tp_term_macronutrient"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateMash"
+            android:text="@string/tp_term_mash"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateMS"
+            android:text="@string/tp_term_ms"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateMesocycle"
+            android:text="@string/tp_term_mesocycle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateMicrocycle"
+            android:text="@string/tp_term_microcycle"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateME"
+            android:text="@string/tp_term_me"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
             android:onClick="translateNP"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:id="@+id/tp_np"
-            android:textAllCaps="false"/>
+            android:text="@string/tp_term_np"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tp_ngp"
-            android:onClick="translateNGP"
-            android:id="@+id/tp_ngp"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_if"
-            android:layout_margin="20dp"
-            android:layout_centerHorizontal="true"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tp_vam"
-            android:onClick="translateVAM"
-            android:id="@+id/tp_vam"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_ef"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:layout_alignParentRight="true"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tp_wkg"
-            android:onClick="translateWkg"
-            android:id="@+id/tp_wkg"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_np"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
             android:layout_alignParentLeft="true"
-            android:textAllCaps="false"/>
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateNPG"
+            android:text="@string/tp_term_ngp"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tp_pwrbal"
-            android:onClick="translatePwrBal"
-            android:id="@+id/tp_pwrbal"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_ngp"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:layout_centerHorizontal="true"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tp_work"
-            android:onClick="translateWork"
-            android:id="@+id/tp_work"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_vam"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:layout_alignParentRight="true"
-            android:textAllCaps="false"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tp_pahr"
-            android:onClick="translatePaPwHr"
-            android:id="@+id/tp_pahr"
-            android:textColor="#FFFFFF"
-            android:background="#1A237E"
-            android:layout_below="@+id/tp_wkg"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
             android:layout_alignParentLeft="true"
-            android:textAllCaps="false"/>
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            android:background="#1A237E"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateOverreaching"
+            android:text="@string/tp_term_overreaching"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tp_pwhr"
-            android:onClick="translatePaPwHr"
-            android:id="@+id/tp_pwhr"
-            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
             android:background="#1A237E"
-            android:layout_below="@+id/tp_pwrbal"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:layout_centerHorizontal="true"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translateOvertraining"
+            android:text="@string/tp_term_overtraining"/>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tp_vi"
-            android:onClick="translateVI"
-            android:id="@+id/tp_vi"
-            android:textColor="#FFFFFF"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
             android:background="#1A237E"
-            android:layout_weight="1"
-            android:layout_margin="20dp"
-            android:layout_below="@+id/tp_work"
-            android:layout_alignParentRight="true"
-            android:textAllCaps="false"/>
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="translatePAHR"
+            android:text="@string/tp_term_pahr"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 </ScrollView>
