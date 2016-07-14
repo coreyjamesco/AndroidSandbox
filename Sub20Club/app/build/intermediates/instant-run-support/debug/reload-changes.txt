@@ -1,0 +1,3 @@
+CHANGED,/Users/coreysteimel/software/AndroidSandbox/Sub20Club/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/Users/coreysteimel/software/AndroidSandbox/Sub20Club/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/zaltana/sub20club/WorkoutActivity$override.class
+CHANGED,/Users/coreysteimel/software/AndroidSandbox/Sub20Club/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/zaltana/sub20club/DisplayWorkoutActivity$override.class

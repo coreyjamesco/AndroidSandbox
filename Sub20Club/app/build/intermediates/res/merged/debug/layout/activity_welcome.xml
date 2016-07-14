@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.zaltana.sub20club.Welcome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Welcome to TEAM ZALATANA"
+            android:textColor="#000000"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="We are so excited that have you apart of Team Zalatana \n\n It is our sincere pleasure to guide you in your pursuit of breaking 20 minutes in the 5k \n\n Are you ready to SEND IT!?"
+            android:textColor="#616161"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
